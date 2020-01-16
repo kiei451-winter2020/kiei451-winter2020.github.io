@@ -1,11 +1,192 @@
+<!-- I started with the Bootstrap starter template  -->
+<!-- https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template -->
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>KIEI-451</title>
-</head>
-<body>
-  <h1>Hello!!!!!</h1>
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Permanent+Marker&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- My own CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Hello, KIEI-451!</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- https://getbootstrap.com/docs/4.4/components/navbar -->
+    <!-- I'm using the "navbar-light" color scheme, and a custom background color, defined in my styles.css -->
+    <!-- Because the navbar has a "container" inside, it has gutters (spacing) on the left and right -->
+    <!-- https://getbootstrap.com/docs/4.4/components/navbar/#containers -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="K_RGB.png" class="d-inline-block align-middle">
+          KIEI-451
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <!-- The "ml-auto" means - set the left margin as high as you can, automatically -->
+          <!-- This causes the links to move to the right -->
+          <!-- https://getbootstrap.com/docs/4.4/utilities/flex/#auto-margins -->
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Features</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Full width Jumbotron -->
+    <!-- https://getbootstrap.com/docs/4.4/components/jumbotron/ -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Introduction to Software Development</h1 class="display-4">
+        <p class="lead">Helping Kellogg students live the #developerlife, since 2015</p>
+        <a class="btn btn-info btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-outline-info btn-lg" href="#" role="button">Pricing and Plans</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h2>What you'll learn</h2>
+        </div>
+      </div>
+      <!-- An example of Bootstrap's spacing utility classes -->
+      <!-- https://getbootstrap.com/docs/4.4/utilities/spacing/#how-it-works -->
+      <!-- The "mt-4" gives you more margin on top, responsively -->
+      <div class="row mt-4">
+        <div class="col-sm-4 text-center">
+          <h1><i class="fas fa-code"></i></h1>
+          <h5>HTML and CSS</h5>
+          <p>When we're done with you, you'll be able to build websites like a boss. And, you'll finally understand what those "front-end devs" at your company are working on. This is the left column on desktop, #1 when stacked.</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <h1><i class="fas fa-chart-line"></i></h1>
+          <h5>Data Analytics with SQL</h5>
+          <p>Those "data scientists" will have nothing on you. Grab those databases, build those reports, and uncover those hidden insights like a champ. This is the middle column on desktop, that will stack 2nd from the top.</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <h1><i class="fas fa-code-branch"></i></h1>
+          <h5>Software Engineering</h5>
+          <p>Be able to actually talk to those people who live in the basement of your office. That idea for the cat social network with the $1B valuation you've always had? Time to build it. Right column on desktop and #3 in the stack.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Just a line, a "horizontal rule" with some space on the y-axis -->
+    <hr class="my-4">
+
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h2>People Just Love the Carousel</h2>
+          <p>It works best when the images inside have the same orientation and aspect ratio</p>
+        </div>
+      </div>
+      <!-- The dreaded carousel -->
+      <div id="carouselExampleControls" class="carousel slide mt-4" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- The img-fluid class makes the image responsive -->
+            <img src="carnitas.jpg" class="img-fluid" alt="Tacos">
+          </div>
+          <div class="carousel-item">
+            <img src="whiskey.jpg" class="img-fluid" alt="Whiskey">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Just a div, with a custom background color -->
+    <div class="testimonials my-4 py-4">
+      <div class="container">
+        <div class="row my-4">
+          <div class="col text-center">
+            <h2>What People Are Saying</h2>
+            <p>Don't just take our word for it</p>
+          </div>
+        </div>
+        <!-- Media object/media list -->
+        <!-- https://getbootstrap.com/docs/4.4/components/media-object/#media-list -->
+        <ul class="list-unstyled">
+          <li class="media">
+            <img src="https://placekitten.com/200/200" class="mr-3" alt="Pic">
+            <div class="media-body">
+              <blockquote class="blockquote">
+                <p class="mb-0">Before this class, I didn't even like tacos. Thanks for changing my life!!!</p>
+                <footer class="blockquote-footer">Katie, <cite title="Class of 2017">Class of 2016</cite></footer>
+              </blockquote>
+            </div>
+          </li>
+          <li class="media">
+            <img src="https://placem.at/people?w=200&h=200" class="mr-3" alt="Pic">
+            <div class="media-body">
+              <blockquote class="blockquote">
+                <p class="mb-0">Brian and Ben are constantly thinking of innovative ways to incorporate their passion for tacos and kale into their lectures. 100% would recommend!</p>
+                <footer class="blockquote-footer">Brendan, <cite title="Class of 2017">Class of 2018</cite></footer>
+              </blockquote>
+            </div>
+          </li>
+          <li class="media">
+            <img src="https://baconmockup.com/200/200/" class="mr-3" alt="Pic">
+            <div class="media-body">
+              <blockquote class="blockquote">
+                <p class="mb-0">I thought I would go into consulting after Kellogg. After KIEI-451, I'm definitely going into consulting.</p>
+                <footer class="blockquote-footer">Rob, <cite title="Class of 2019">Class of 2017</cite></footer>
+              </blockquote>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer, just another grid, with a class added for custom styling -->
+    <div class="container footer">
+      <div class="row my-5">
+        <div class="col-sm-6">
+          <img src="K_RGB.png">
+        </div>
+        <div class="col-sm-3">
+          <h6>KIEI-451</h6>
+          <ul class="list-unstyled mt-3">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h6>Established 2015</h6>
+          <p class="mt-3"><em>For educational purposes only.</em></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
