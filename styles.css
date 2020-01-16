@@ -51,6 +51,15 @@ h1, h2, h3, h4, h5, h6 {
   height: 64px;
 }
 
+/* The pricing */
+.pricing {
+  background-color: #181818;
+}
+.pricing h1 {
+  font-family: 'Permanent Marker', cursive;
+  color: #cccccc;
+}
+
 /* The footer */
 .footer img {
   width: 100px;

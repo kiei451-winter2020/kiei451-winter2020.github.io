@@ -1,0 +1,157 @@
+<!-- I started with the Bootstrap starter template  -->
+<!-- https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Permanent+Marker&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- My own CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Hello, KIEI-451!</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- https://getbootstrap.com/docs/4.4/components/navbar -->
+    <!-- I'm using the "navbar-light" color scheme, and a custom background color, defined in my styles.css -->
+    <!-- Because the navbar has a "container" inside, it has gutters (spacing) on the left and right -->
+    <!-- https://getbootstrap.com/docs/4.4/components/navbar/#containers -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="K_RGB.png" class="d-inline-block align-middle">
+          KIEI-451
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <!-- The "ml-auto" means - set the left margin as high as you can, automatically -->
+          <!-- This causes the links to move to the right -->
+          <!-- https://getbootstrap.com/docs/4.4/utilities/flex/#auto-margins -->
+          <div class="navbar-nav mr-auto">
+            <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="pricing.html">Pricing</a>
+          </div>
+          <div class="navbar-nav ml-auto">
+            <a class="btn btn-outline-info" href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Just a div, with a custom background color -->
+    <div class="pricing py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1>Check out this sweet pricing!</h1>
+            <table class="table table-striped table-dark table-hover">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Plus</th>
+                  <th>Pro</th>
+                  <th>Premium <span class="badge badge-success">Current Plan</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Price</th>
+                  <td>$0 with admission to Kellogg</td>
+                  <td>$0 with admission to Kellogg</td>
+                  <td>$0 with admission to Kellogg</td>
+                </tr>
+                <tr>
+                  <th>Instructor</th>
+                  <td>Ben or Brian</td>
+                  <td>Brian or Ben</td>
+                  <td>Neither of Us</td>
+                </tr>
+                <tr>
+                  <th>HTML/CSS</th>
+                  <td><i class="text-success fas fa-check-circle"></i></td>
+                  <td><i class="text-success fas fa-check-circle"></i></td>
+                  <td><i class="text-success fas fa-check-circle"></i></td>
+                </tr>
+                <tr>
+                  <th>SQL</th>
+                  <td><i class="text-success fas fa-check-circle"></i></td>
+                  <td><i class="text-success fas fa-check-circle"></i></td>
+                  <td><i class="text-success fas fa-check-circle"></i></td>
+                </tr>
+                <tr>
+                  <th>Software Engineering</th>
+                  <td><i class="text-success fas fa-check-circle"></i></td>
+                  <td><i class="text-success fas fa-check-circle"></i></td>
+                  <td><i class="text-success fas fa-check-circle"></i></td>
+                </tr>
+                <tr>
+                  <th>Support via Slack</th>
+                  <td><i class="text-danger fas fa-minus-circle"></i></td>
+                  <td><i class="text-success fas fa-check-circle"></i></td>
+                  <td><i class="text-success fas fa-check-circle"></i></td>
+                </tr>
+                <tr>
+                  <th>Taco References</th>
+                  <td><i class="text-danger fas fa-minus-circle"></i></td>
+                  <td><i class="text-success fas fa-check-circle"></i></td>
+                  <td><i class="text-success fas fa-check-circle"></i></td>
+                </tr>
+                <tr>
+                  <th>Cat Pictures</th>
+                  <td><i class="text-danger fas fa-minus-circle"></i></td>
+                  <td><i class="text-danger fas fa-minus-circle"></i></td>
+                  <td><i class="text-success fas fa-check-circle"></i></td>
+                </tr>
+                <tr>
+                  <th>Bacon Included</th>
+                  <td><i class="text-danger fas fa-minus-circle"></i></td>
+                  <td><i class="text-danger fas fa-minus-circle"></i></td>
+                  <td><i class="text-success fas fa-check-circle"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer, just another grid, with a class added for custom styling -->
+    <div class="container footer">
+      <div class="row my-5">
+        <div class="col-sm-6">
+          <img src="K_RGB.png">
+        </div>
+        <div class="col-sm-3">
+          <h6>KIEI-451</h6>
+          <ul class="list-unstyled mt-3">
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h6>Established 2015</h6>
+          <p class="mt-3"><em>For educational purposes only.</em></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
