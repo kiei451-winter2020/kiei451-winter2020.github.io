@@ -51,6 +51,50 @@
       </div>
     </nav>
 
+    <hr class="my-4">
+
+    <div class="container text-center">
+      <h1>Get in touch</h1>
+    </div>
+
+    <div class="container my-5">
+      <form action="https://formspree.io/mnqpgplj" method="post">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" name="email">
+          <small class="form-text text-muted">Your email address will only be used to spam you – and we won't sell it, unless we get a really good offer.</small>
+        </div>
+        <div class="form-group">
+          <label>How should we contact you?</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="contactMethod" id="contactEmail" value="email" checked>
+            <label class="form-check-label" for="contactEmail">
+              Email
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="contactMethod" id="contactPhone" value="phone">
+            <label class="form-check-label" for="contactPhone">
+              Phone
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="contactMethod" id="contactPigeon" value="pigeon">
+            <label class="form-check-label" for="contactPigeon">
+              Carrier Pigeon
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <hr class="my-4">
+
     <!-- Footer, just another grid, with a class added for custom styling -->
     <div class="container footer">
       <div class="row my-5">
